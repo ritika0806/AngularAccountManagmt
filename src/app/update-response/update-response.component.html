@@ -1,0 +1,20 @@
+<div class="container">
+    <br><br>
+    <h3>Update Customer name</h3>
+    <div>
+<form>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label>Account Id:</label>
+        
+        <input  type="text" name="accountId" placeholder="Enter account Id" [(ngModel)]="CustomerDetails.accountId"  class="form-control">
+        </div>
+    </div><br>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label>Name:</label>
+        
+        <input  type="text" name="customerName" placeholder="Enter customer name" [(ngModel)]="CustomerDetails.customerName"  class="form-control">
+        </div></div><br>
+    <input  type="submit" value="submit" (click)="updateAccount()"   class="btn btn-success">
+</form>

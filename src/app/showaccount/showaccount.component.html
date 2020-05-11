@@ -1,0 +1,48 @@
+<div class="container">
+    <br><br>
+    <h3>Find Account</h3>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label for="customerName">Account Id</label>
+            <input class="form-control mr-sm-2" name="account id"   placeholder="Enter accountId" aria-label="Search" [(ngModel)]="accountId" >
+            <br>
+            <input type="submit" value="Find" class="btn btn-success" (click)="fetch()">
+        </div>
+    </div>
+</div>
+
+    <table *ngIf=check class="table table-striped">
+        <thead>
+            <tr>
+                <th>AccountId</th>
+                <th>CustomerName</th>
+               
+                <th>ContactNumber</th>
+                <th>AadharNumber</th>
+                <th>PanNumber</th>
+                <th>DateOfBirth</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Branch</th>
+                <th>AccountType</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{accounts.account.accountId}}</td>
+                <td>{{accounts.customerName}}</td>
+
+                <td>{{accounts.contactNumber}}</td>
+                <td>{{accounts.aadharNumber}}</td>
+                <td>{{accounts.panNumber}}</td>
+                <td>{{accounts.dateOfBirth}}</td>
+                <td>{{accounts.gender}}</td>
+                <td>{{accounts.address}}</td>
+                <td>{{accounts.account.branch}}</td>
+                <td>{{accounts.account.accountType}}</td>
+                <td>{{accounts.account.amount}}</td>
+             </tr>
+        </tbody>
+      
+    </table>   

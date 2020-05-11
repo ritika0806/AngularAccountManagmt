@@ -1,0 +1,42 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand mb-0 h1" href="#">Pecunia Bank</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  </nav>
+  <div style="padding-top: 80px;"></div>
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm  navbar-custom">
+      <ul class="nav nav-pills ">
+      <li class="nav-item ">
+        <a class="nav-link" class="btn btn-outline-secondary  btn-sm  mr-3" routerLink="add">Add Account</a>
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a href="#" class=" btn btn-outline-secondary dropdown-toggle btn-sm mr-3"  data-toggle="dropdown">Update Account</a>
+        <div class="  dropdown">
+          <a class="dropdown-item" href="#">Update Name</a>
+          <a class="dropdown-item" href="#">Update Contact</a>
+          <a class="dropdown-item" href="#">Update Address</a>
+
+        </div>
+      </li>-->
+      <li class="nav-item ">
+        <a class="nav-link" class="btn btn-outline-secondary  btn-sm  mr-3" routerLink="update">Update Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" class="btn btn-outline-secondary btn-sm mr-3" routerLink="delete">Delete Account</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" class="btn btn-outline-secondary btn-sm mr-3" routerLink="show">Show Account</a>
+      </li>
+    </ul>
+    </nav>
+    </div>
+    
+    <router-outlet></router-outlet>

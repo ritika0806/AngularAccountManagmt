@@ -1,0 +1,21 @@
+<div class="container">
+    <br><br>
+    <h3>Update Customer contact</h3>
+    <div>
+<form><div class="form-group row">
+    <div class="col-xs-4">
+    <label>Account Id:</label>
+        
+        <input  type="text" name="accountId" placeholder="Enter accountId" [(ngModel)]="CustomerDetails.accountId"  class="form-control">
+    </div>
+    </div>
+    <br>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label>Contact number:</label>
+        
+        <input  type="text" name="customerContact" placeholder="Enter contact number" [(ngModel)]="CustomerDetails.contactNumber"  class="form-control">
+    </div></div><br>
+    <input  type="submit" value="submit" (click)="updateaccont()"   class="btn btn-success">
+</form>
+

@@ -1,0 +1,23 @@
+<div class="container">
+    <br><br>
+    <h3>Update Customer Address</h3>
+    <div>
+<form>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label>Account Id:</label>
+        
+        <input  type="text" name="accountId" placeholder="Enter accountId" [(ngModel)]="CustomerDetails.accountId"  class="form-control">
+    </div>
+    </div>
+    <br>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label>Address:</label>
+        
+        <input  type="textarea" name="customerAddress"placeholder="Enter Address" [(ngModel)]="CustomerDetails.address"  class="form-control">
+   
+        </div> </div><br>
+    <input  type="submit" value="submit" (click)="updateadd()"   class="btn btn-success">
+</form>
+

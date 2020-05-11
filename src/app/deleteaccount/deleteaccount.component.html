@@ -1,0 +1,14 @@
+<div class="container">
+    <br><br>
+    <h3>Delete Account</h3>
+    <div>
+        <form>
+            <div class="form-group row">
+                <div class="col-xs-4">
+                <label for="customerName">Account Id:</label>
+
+                    <input class="form-control mr-sm-2"   id="accountId"  placeholder="Enter accountId" aria-label="Search" required [(ngModel)]="accountId" name="accountId"  >
+                    <br>
+                
+ <button type="submit" class="btn btn-danger" (click)="DeleteAccount()">Delete</button>
+            </div>
